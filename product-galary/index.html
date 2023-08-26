@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="imggallery">
+        <div class="similar">
+            <img src="./img/img1.webp" alt="" onclick="img1()" class="similarimges">
+            <img src="./img/img2.webp" alt="" onclick="img2()" class="similarimges">
+            <img src="./img/img3.webp" alt="" onclick="img3()" class="similarimges">
+            <img src="./img/img4.webp" alt="" onclick="img4()"  class="similarimges">
+        </div>
+        <img src="./img/img1.webp" alt="" class="productimg" id="mainimge">
+    </div>
+    <script>
+        let mainimage1=document.getElementById("mainimge");
+        function img1(){
+            mainimage1.src="./img/img1.webp";
+        }
+        function img2(){
+            mainimage1.src="./img/img2.webp";
+        }
+        function img3(){
+            mainimage1.src="./img/img3.webp";
+        } function img4(){
+            mainimage1.src="./img/img4.webp";
+        }
+
+
+    </script>
+</body>
+</html>
