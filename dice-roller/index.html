@@ -21,6 +21,24 @@
         .dice-main-title {
             font-size: 60px;
         }
+
+        .roll-animation {
+            animation: roll 0.5s ease-in-out;
+        }
+
+        @keyframes roll {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(180deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
     </style>
 </head>
 
@@ -59,11 +77,12 @@
                         <div class="card-body ">
                             <h1 class="dice-title">DUAL DICE</h1>
                             <h1 class="dice-main-title">ROLLER</h1>
-                            <span id="dice-roller-text">0</span>
+                            <span id="dice-roller-text" class="fs-3">0</span>
 
                         </div>
-                        <div class="container py-3">
-                            <button class="btn btn-warning fs-4 px-5">ROLL DUAL</button>
+                        <div class="container py-1">
+                            <button class="btn btn-warning fs-4 px-5" onclick="rollPlayerOne();rollPlayerTwo()">ROLL
+                                DUAL</button>
                         </div>
                     </div>
                 </div>
@@ -86,7 +105,18 @@
             const max = 6;
             const number = Math.floor(Math.random() * (max - min + 1)) + min;
             document.getElementById("dice-roller-text").innerHTML = number;
-            const diceImg = document.getElementById("dice-1");
+
+
+            const diceImgOne = document.getElementById("dice-1");
+
+            diceImgOne.classList.add("roll-animation");
+
+            setTimeout(() => {
+                diceImgOne.classList.remove("roll-animation");
+                diceImgOne.src = `./img/${number}.png`;
+            }, 500);
+
+
 
             if (number == 1) {
                 document.getElementById("dice-1").src = "./img/1.png";
@@ -119,7 +149,18 @@
             const max = 6;
             const number = Math.floor(Math.random() * (max - min + 1)) + min;
             document.getElementById("dice-roller-text").innerHTML = number;
-            const diceImg = document.getElementById("dice-1");
+
+            const diceImgTwo = document.getElementById("dice-2");
+
+            diceImgTwo.classList.add("roll-animation");
+
+            setTimeout(() => {
+                diceImgTwo.classList.remove("roll-animation");
+                diceImgTwo.src = `./img/${number}.png`;
+            }, 500);
+
+
+
 
             if (number == 1) {
                 document.getElementById("dice-2").src = "./img/1.png";
@@ -146,6 +187,8 @@
 
             }
         }
+
+
     </script>
 
 
