@@ -9,13 +9,17 @@
 <body> 
     <div class="container">
     <div class="card01">
+        <h1>player 1</h1>
     <span id="quantity">1</span> <br> <br>
     <button type="button" onclick="decrement()" id="btn01">-</button>
     <button type="button" onclick="increment()" id="btn01">+</button> <br><br>
     <button type="button" id="btn02">Buy Now</button> <br> <br>
   </div>
+
+  <img src="./../img/boll.jpeg" alt="" class="img">
   
 <div class="card02">
+    <h1>player 1</h1>
     <span id="quantity01">1</span> <br> <br>
     <button type="button" onclick="decrement01()" id="btn03">-</button>
     <button type="button" onclick="increment01()" id="btn03">+</button> <br><br>
@@ -31,10 +35,14 @@
       if (valueQuantity == 1)
           return;
       quantity.innerText = --valueQuantity;
+      
   }
 
   function increment() {
       quantity.innerText = ++valueQuantity;
+      if (valueQuantity == 11)
+     alert("win");
+    
   }
 
   const quantity01 = document.getElementById("quantity01");
@@ -44,10 +52,15 @@
       if (valueQuantity01 == 1)
           return;
       quantity01.innerText = --valueQuantity01;
+
+   
   }
 
   function increment01() {
       quantity01.innerText = ++valueQuantity01;
+     if (valueQuantity01 == 11)
+     alert("win");
+    
   }
 </script>
 </body>

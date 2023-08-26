@@ -54,4 +54,13 @@
     background-color: #FB4570;
     border: 1px solid var(--darkColor) ;
  }
+.img {
+    background-color: #FB6B90;
+}
+
+h1 {
+    font-size: 55px;
+    color: #FB4570;
+    margin-bottom: 40px;
+}
  
