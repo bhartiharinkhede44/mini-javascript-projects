@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Bulb On Off</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-cont">
+            <div class="img-cont">
+                <img src="./img/off-bulb.png" alt="Bulb Off" class="bulb-img" id="bulb" />
+            </div>
+            <div class="on-off-btn-cont">
+                <button type="button" class="on-off-btn" onclick=" bulbOn()">ON</button>
+                <button type="button" class="on-off-btn" onclick="bulbOff()">OFF </button>
+
+            </div>
+
+        </div>
+        <div class="color-btn-cont">
+            <button type="button" class="color-btn-pink  on-off-btn" onclick="colorButton('pink')">Pink</button>
+            <button type="button" class="color-btn-blue  on-off-btn" onclick="colorButton('blue')">Blue</button>
+            <button type="button" class="color-btn-green  on-off-btn" onclick="colorButton('green')">Green</button>
+            <button type="button" class="color-btn-red  on-off-btn" onclick="colorButton('red')">Red</button>
+
+        </div>
+    </div>
+
+
+    <script>
+        const bulbElement = document.getElementById('bulb');
+        function bulbOn() {
+            bulbElement.src = "./img/on-bulb.png";
+        }
+        function bulbOff() {
+            bulbElement.src = "./img/off-bulb.png";
+        }
+        function colorButton(changecolor) {
+            if (changecolor == 'pink') {
+                bulbElement.src = "./img/pink-bulb.png";
+            }
+            else if (changecolor == 'blue') {
+                bulbElement.src = "./img/blue-bulb.png";
+
+            }
+            else if (changecolor == 'green') {
+                bulbElement.src = "./img/green-bulb.png";
+
+            }
+            else
+             {
+                    bulbElement.src = "./img/red-bulb.png";
+
+                }
+
+
+        }
+
+
+    </script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

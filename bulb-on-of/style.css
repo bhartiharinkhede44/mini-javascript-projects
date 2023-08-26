@@ -1,0 +1,70 @@
+.container{
+    display: flex;
+    background-color:#fdced5;
+
+}
+.main-cont{
+
+    display: block;
+    margin: 10px auto;
+    margin-top: 50px;
+    height: 650px;
+    width: 750px;
+    border: 1px solod black;
+    background-color:#fcdde4;
+
+}
+.img-cont{
+    text-align: center;
+
+}
+.bulb-img{
+    height: 350px;
+    margin-top: 25px;
+
+}
+.on-off-btn-cont{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+.on-off-btn{
+    font-size: 30px;
+    background-color: #FB4570;
+    color: #EFEBE0;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    width: 150px;
+    border-radius: 10px;
+
+}
+.color-btn-cont{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-right: 90px;
+}
+.color-btn-pink:hover{
+    background-color: rgb(209, 49, 97);
+    color: black;
+    
+}
+.color-btn-blue:hover{
+    background-color: rgb(19, 62, 252);
+    color: black;
+}
+.color-btn-green:hover{
+    background-color: rgb(6, 247, 106);
+    color: black;
+    
+}
+.color-btn-red:hover{
+    background-color: rgb(247, 6, 6);
+    color: black;
+    
+}
+
