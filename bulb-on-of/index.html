@@ -21,7 +21,15 @@
 
             </div>
 
-       
+        </div>
+        <div class="color-btn-cont">
+            <button type="button" class="color-btn-pink  on-off-btn" onclick="colorButton('pink')">Pink</button>
+            <button type="button" class="color-btn-blue  on-off-btn" onclick="colorButton('blue')">Blue</button>
+            <button type="button" class="color-btn-green  on-off-btn" onclick="colorButton('green')">Green</button>
+            <button type="button" class="color-btn-red  on-off-btn" onclick="colorButton('red')">Red</button>
+
+        </div>
+    </div>
 
 
     <script>
@@ -31,6 +39,26 @@
         }
         function bulbOff() {
             bulbElement.src = "./img/off-bulb.png";
+        }
+        function colorButton(changecolor) {
+            if (changecolor == 'pink') {
+                bulbElement.src = "./img/pink-bulb.png";
+            }
+            else if (changecolor == 'blue') {
+                bulbElement.src = "./img/blue-bulb.png";
+
+            }
+            else if (changecolor == 'green') {
+                bulbElement.src = "./img/green-bulb.png";
+
+            }
+            else
+             {
+                    bulbElement.src = "./img/red-bulb.png";
+
+                }
+
+
         }
 
 
