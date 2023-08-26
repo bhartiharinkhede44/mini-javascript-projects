@@ -1,6 +1,6 @@
 .container{
     display: flex;
-    background-color:#fdced5;
+    background-color:#f8b4bf;
 
 }
 .main-cont{
@@ -49,21 +49,26 @@
     margin-right: 90px;
 }
 .color-btn-pink:hover{
-    background-color: rgb(209, 49, 97);
+    background-color:#ff66d9;
     color: black;
     
 }
 .color-btn-blue:hover{
-    background-color: rgb(19, 62, 252);
+    background-color: #3385ff;
     color: black;
 }
 .color-btn-green:hover{
-    background-color: rgb(6, 247, 106);
+    background-color: #00e600;
     color: black;
     
 }
 .color-btn-red:hover{
-    background-color: rgb(247, 6, 6);
+    background-color:#e60000;
+    color: black;
+    
+}
+.color-btn-sky:hover{
+    background-color:  #80bfff;
     color: black;
     
 }
