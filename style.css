@@ -1,0 +1,116 @@
+:root {
+    --themeColor: #FB6B90 ;
+    --textColor: white;
+    --bgColor: #f8b4bf ;
+    --darkColor: #FB4570;
+}
+* 
+{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header{
+    height: 100vh;
+    padding: 15px;
+    background-color: var(--themeColor);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+    z-index: 50;
+ }
+  
+ .header .profile {
+    text-align: center;
+    margin: 10px;
+ }
+ .header .profile img {
+    width: 150px;
+    height: 150px;
+    /* margin-top: 10px; */
+    border-radius: 50%;
+    border: 8px solid var(--textColor);
+ }
+ .header .profile p {
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+  .header .profile .social-icons a {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    margin-left: 6px;
+    color: white;
+    background-color: var(--bgColor);
+    border-radius: 50%;
+    font-size: 25px;
+    transition: 0.4s
+
+ } 
+ .header .profile .social-icons a:hover {
+    cursor: pointer;
+    background-color: var(--darkColor);
+ }
+ nav {
+    margin-top: 30px;
+ }
+  nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: lightgrey;
+    padding: 5px 15px; 
+    font-size: 17px;
+    font-weight: 600px;
+    letter-spacing: 0.6px;
+    margin: 7px 0;
+  }
+  nav ul li a i {
+    display: inline-block;
+    margin-right:10px ;
+    font-size: 20px;
+    transition: 0.4s;
+  }
+  nav ul li a i:hover {
+ color:var(--darkColor);
+  }
+  nav ul li .active i {
+    color:var(--themeColor); 
+  }
+  .footer {
+    text-align: center;
+    background-color: var(--themeColor);
+    margin-top: 55px;
+    letter-spacing: 0.6px;
+    font-size: 14px;
+    color: var(--textColor);
+  }
+   .home {
+    height: 200vh;
+    margin-left: 260px;
+    background-color: var(--bgColor);
+ 
+}
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.card-container01 {
+    display: flex;
+    margin-left: 57px;
+}
+
+   .card {
+    margin-left: 20px;
+    margin-top: 20px;
+   }
+
+   .card01 {
+    margin-left: 77px;
+   }
+  
