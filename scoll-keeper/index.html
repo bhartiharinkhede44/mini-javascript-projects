@@ -6,12 +6,49 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="card">
-        <img src="card2.webp" alt="" height="350px" class="img">
+<body> 
+    <div class="container">
+    <div class="card01">
+    <span id="quantity">1</span> <br> <br>
+    <button type="button" onclick="decrement()" id="btn01">-</button>
+    <button type="button" onclick="increment()" id="btn01">+</button> <br><br>
+    <button type="button" id="btn02">Buy Now</button> <br> <br>
+  </div>
+  
+<div class="card02">
+    <span id="quantity01">1</span> <br> <br>
+    <button type="button" onclick="decrement01()" id="btn03">-</button>
+    <button type="button" onclick="increment01()" id="btn03">+</button> <br><br>
+    <button type="button" id="btn04">Buy Now</button> <br> <br>
+</div>
+</div>
 
-        
-    </div>
-    
+<script>
+  const quantity = document.getElementById("quantity");
+  let valueQuantity = parseInt(quantity.innerText);
+
+  function decrement() {
+      if (valueQuantity == 1)
+          return;
+      quantity.innerText = --valueQuantity;
+  }
+
+  function increment() {
+      quantity.innerText = ++valueQuantity;
+  }
+
+  const quantity01 = document.getElementById("quantity01");
+  let valueQuantity01 = parseInt(quantity01.innerText);
+
+  function decrement01() {
+      if (valueQuantity01 == 1)
+          return;
+      quantity01.innerText = --valueQuantity01;
+  }
+
+  function increment01() {
+      quantity01.innerText = ++valueQuantity01;
+  }
+</script>
 </body>
 </html>
