@@ -1,0 +1,41 @@
+.container{
+    display: flex;
+
+}
+.main-cont{
+
+    display: block;
+    margin: 10px auto;
+    margin-top: 50px;
+    height: 650px;
+    width: 750px;
+    border: 1px solod black;
+    background-color:#f1d7dc;
+
+}
+.img-cont{
+    text-align: center;
+
+}
+.bulb-img{
+    height: 350px;
+    margin-top: 25px;
+
+}
+.on-off-btn-cont{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+.on-off-btn{
+    font-size: 30px;
+    background-color: #FB6B90;
+    color: #EFEBE0;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    width: 150px;
+    border-radius: 10px;
+
+}
