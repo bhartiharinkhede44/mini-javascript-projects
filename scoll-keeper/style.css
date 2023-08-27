@@ -13,13 +13,19 @@
 }
  #quantity {
     font-size: 80px;
-    margin-left: 45px;
+    margin-left: 45%;
  }
  #btn01 {
-    font-size: 90px;
-    border: none;
-    margin-left: 30px;
- }
+   font-size: 90px;
+   border: 2px solid red;
+   background-color: #f97795;
+   color: white;
+   border-radius: 10px;
+   padding-left:25px ;
+   padding-right:25px ;
+   margin-left: 50px;
+   margin-top: 40PX;
+}
  #btn02 {
     margin-left: 30px;
     font-size: 25px;
@@ -38,12 +44,19 @@
  }
  #quantity01  {
     font-size: 80px;
-    margin-left: 45px;
+    margin-left: 45%;
+  
  }
  #btn03 {
     font-size: 90px;
-    border: none;
-    margin-left: 30px;
+    border: 2px solid red;
+    background-color: #f97795;
+    color: white;
+    border-radius: 10px;
+    padding-left:25px ;
+    padding-right:25px ;
+    margin-left: 50px;
+    margin-top: 40PX;
  }
  #btn04 {
     margin-left: 30px;
@@ -55,12 +68,15 @@
     border: 1px solid var(--darkColor) ;
  }
 .img {
-    background-color: #FB6B90;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 5px palevioletred;
 }
 
 h1 {
+   margin-left: 50px;
     font-size: 55px;
-    color: #FB4570;
+    color: #ec0b40;
     margin-bottom: 40px;
 }
  

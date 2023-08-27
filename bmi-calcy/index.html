@@ -6,12 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI CALCULATOR</title>
     <style>
+
+:root {
+    --themeColor: #FB6B90 ;
+    --textColor: white;
+    --bgColor: #f8b4bf ;
+    --darkColor: #FB4570;
+}
         body {
             background-color: #FB8DA0;
         }
 
         .container {
-            background-color: #FB6B90;
+            background-color:#FB8DA0;
             height: 400px;
             display: flex;
             flex-direction: row;
@@ -26,10 +33,38 @@
            
         }
         .btn{
-           border-radius: 6px; 
-           
+            margin-top: 30px;
+           border-radius: 10px; 
+           padding: 10px 20px 10px 20px ;
+           font-size: 15px;
+           margin-left: 45px;
+           background-color:var(--darkColor) ;
+           color: white;
+          border: 2px solid red;
 
         }
+        .text {
+            font-size: 18px;
+            color: rgb(250, 245, 245);
+            font-weight: 500;
+        }
+
+        .input-box {
+            height: 28px;
+            margin-top: 10px;
+            margin-left: 5px ;
+            width: 250px;
+            border-radius: 10px;
+            border: 1px solid red;
+            box-shadow: 5px 5px 10px 3px var(--themeColor);
+            background-color: rgb(252, 231, 234);
+        }
+        h1 {
+            text-align: center;
+            color:red ;
+            margin-bottom: 50px;
+        }
+    
     </style>
 </head>
 
@@ -39,11 +74,11 @@
         <h1>BMI CALCULATOR</h1>
        
         <label for="weight" class="text">Weight (kg):</label>
-        <input type="number" id="weight" step="0.01"><br><br>
+        <input type="number" id="weight" step="0.01"  class="input-box"><br><br>
         <label for="height" class="text">Height (cm):</label>
-        <input type="number" id="height" step="0.01"><br><br>
-        <button type="button" id="Calculatebtn" class="btn" onclick="Calculatebmi()">Calculate BMI</button>&nbsp;&nbsp;
-        <button type="button" id="Resetbtn" class="btn" onclick="Resetbmi()">Reset</button>
+        <input type="number" id="height" step="0.01" class="input-box"><br><br>
+        <button type="button" id="Calculatebtn" class="btn" onclick="Calculatebmi()">Calculate BMI</button>
+        <button type="button" id="Resetbtn" class="btn " onclick="Resetbmi()">Reset</button>
         <p id="answer"></p>
     </div>
     <div class="imgcontainer">
@@ -69,21 +104,21 @@
                 let BmiMessage = "Your BMI is : " + bmi.toFixed(2) ;
                 if (bmi < 18.5) 
                 {
-                    BmiMessage += "You are underweight.";
-                    image.src="./img/hea.png "
+                    BmiMessage += " → You are underweight.";
+                    image.src="./img/underweight.jpg "
                     
                 }
                  else if (bmi >= 18.5 && bmi < 24.9) 
                 {
-                    BmiMessage += "You have a healthy weight.";
+                    BmiMessage += " → You have a healthy weight.";
                     image.src="./img/hea.png"
                 } else if (bmi >= 25 && bmi < 29.9)
                 {
-                    BmiMessage+= "You are overweight.";
+                    BmiMessage+= " → You are overweight.";
                     image.src="./img/overweight-img.png"
                 } else
                 {
-                    BmiMessage += "You are obese.";
+                    BmiMessage += " → You are obese.";
                     image.src="./img/overweight-img.png"
                 }
                 document.getElementById("answer").textContent = BmiMessage;

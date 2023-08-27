@@ -9,21 +9,21 @@
 <body> 
     <div class="container">
     <div class="card01">
-        <h1>player 1</h1>
-    <span id="quantity">1</span> <br> <br>
+        <h1>Player 1</h1>
+    <span id="quantity">0</span> <br> <br>
     <button type="button" onclick="decrement()" id="btn01">-</button>
     <button type="button" onclick="increment()" id="btn01">+</button> <br><br>
-    <button type="button" id="btn02">Buy Now</button> <br> <br>
+    <!-- <button type="button" id="btn02">Buy Now</button> <br> <br> -->
   </div>
 
-  <img src="./../img/boll.jpeg" alt="" class="img">
+  <img src="./../img/boll.jpeg" alt="" class="img" >
   
 <div class="card02">
-    <h1>player 1</h1>
-    <span id="quantity01">1</span> <br> <br>
+    <h1>Player 2</h1>
+    <span id="quantity01">0</span> <br> <br>
     <button type="button" onclick="decrement01()" id="btn03">-</button>
     <button type="button" onclick="increment01()" id="btn03">+</button> <br><br>
-    <button type="button" id="btn04">Buy Now</button> <br> <br>
+    <!-- <button type="button" id="btn04">Buy Now</button> <br> <br> -->
 </div>
 </div>
 
@@ -32,7 +32,7 @@
   let valueQuantity = parseInt(quantity.innerText);
 
   function decrement() {
-      if (valueQuantity == 1)
+      if (valueQuantity == 0)
           return;
       quantity.innerText = --valueQuantity;
       
@@ -49,7 +49,7 @@
   let valueQuantity01 = parseInt(quantity01.innerText);
 
   function decrement01() {
-      if (valueQuantity01 == 1)
+      if (valueQuantity01 == 0)
           return;
       quantity01.innerText = --valueQuantity01;
 
