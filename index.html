@@ -9,128 +9,241 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/1c76a0075b.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <div class="row">
-        <div class="col-2 header">
 
-            <!-- profile  -->
-            <div class="profile">
-                <img src="./img/js.png" alt="user-img">
-                <p>Mini JS Projects</p>
-                <div class="social-icons">
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-            <!-- navbar  -->
-            <nav>
-                <ul type="none">
-                    <li> <a href="./index.html"><i class="fa-solid fa-house"></i>Home</a></li>
-                    <li> <a href="./dice-roller/index.html"><i class="fa-solid fa-envelope"></i>Roll dice</a></li>
-                    <li> <a href="./product-galary/index.html"><i class="fa-solid fa-envelope"></i>Product Gallery</a>
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg  navbarBg sticky-top shadow py-md-3 text-light">
+        <div class="container-fluid text-light">
+            <button class="btn btn-primary me-md-3" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand text-light fw-medium" href="#">JS Mini Projects</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
                     </li>
-                    <li> <a href="./bmi-calcy/index.html"><i class="fa-solid fa-envelope"></i>BMI Calculator</a></li>
-                    <li> <a href="./bulb-on-of/index.html"><i class="fa-solid fa-envelope"></i>Bulb Magic</a></li>
-                    <li> <a href="./scoll-keeper/index.html"><i class="fa-solid fa-envelope"></i>Score Keeper</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
                 </ul>
-            </nav>
-
-            <!-- footer  -->
-            <div class="footer">
-                <p> Designed By <br> <span style="color:  #0d56a9; font-weight: 600;">@Poonam S. Digole</span> </p>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
         </div>
+    </nav>
 
-        <div class="col-10 home">
-            <h2> Mini JavaScript Projects</h2>
-            <div class="card-container">
-                <div class="card" style="width: 20rem;">
-
-                    <div class="card-body">
-                        <h5 class="card-title">Dice Roller</h5>
-                        <img src="./img/add1.png" alt="" height="180px" width="290px" >
-                        <p class="card-text">Develop By : Sourabh jaykar</p>
-
-                    </div>
-                    <div class="card-body">
-                        <a href="./dice-roller/index.html" class="card-link">Demo</a>
-                        <a href="#" class="card-link">source code</a>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 20rem;">
-                    <!-- <img src="..." class="card-img-top" alt="..."> -->
-                    <div class="card-body">
-                        <h5 class="card-title">Bulb Magic </h5>
-                        <img src="./bulb-on-of/img/red-bulb.png" alt="" height="180px" width="290" style="background-color:pink ;">
-                        <p class="card-text">Develop by : shital warkhade.</p>
-                    </div>
-                    
-                    <div class="card-body">
-                        <a href="./bulb-on-of/index.html" class="card-link">Demo</a>
-                        <a href="#" class="card-link">source code</a>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 20rem;">
-                    
-                    <div class="card-body">
-                        <h5 class="card-title">Product Gallery</h5>
-                        <img src="./img/imgadd2.png" alt="" height=" 180px" width="290">
-                        <p class="card-text">Develop By : Pournima anjole </p>
-                    </div>
-                    
-                    <div class="card-body">
-                        <a href="./product-galary/index.html" class="card-link">Demo</a>
-                        <a href="#" class="card-link">source code</a>
-                    </div>
-                </div>
-            </div>
+    <!-- offcanvas  -->
 
 
-            <div class="card-container01">
-                <div class="card" style="width: 20rem;">
-                    
-                    <div class="card-body">
-                        <h5 class="card-title">BMI Calculator</h5>
-                        <img src="./img/add5.png" alt="" height="180px" width="290px">
-                        <p class="card-text">Develop By : Bharti harinkhede </p>
-                    </div>
-                   
-                    <div class="card-body">
-                        <a href="./bmi-calcy/index.html" class="card-link">Demo</a>
-                        <a href="#" class="card-link">source code</a>
-                    </div>
-                </div>
-
-                <div class="card card01" style="width: 20rem;">
-                    
-                    <div class="card-body">
-                        <h5 class="card-title">Score keeper</h5>
-                        <img src="./img/boll.jpeg" alt="" height="180px" width="290px">
-                        <p class="card-text">Develope By : Poonam Digole </p>
-                    </div>
-                   
-                    <div class="card-body">
-                        <a href="./scoll-keeper/index.html" class="card-link">Demo</a>
-                        <a href="#" class="card-link">source code</a>
-                    </div>
-                </div>
-            </div>
-
-
+    <div class="offcanvas  offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-
+        <div class="offcanvas-body">
+            <div class="d-flex flex-column flex-shrink-0 p-3 " style="width: 380px;">
+                <a href="/"
+                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <svg class="bi pe-none me-2" width="40" height="32">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                    <span class="fs-4">Explore Now</span>
+                </a>
+                <hr>
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" aria-current="page">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#home"></use>
+                            </svg>
+                            Dual Dice Roller
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link link-body-emphasis">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#speedometer2"></use>
+                            </svg>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link link-body-emphasis">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#table"></use>
+                            </svg>
+                            Orders
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link link-body-emphasis">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#grid"></use>
+                            </svg>
+                            Products
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link link-body-emphasis">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#people-circle"></use>
+                            </svg>
+                            Customers
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+                <div class="dropdown">
+                    <a href="#"
+                        class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                        <strong>mdo</strong>
+                    </a>
+                    <ul class="dropdown-menu text-small shadow">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 
 
+    <div class="container mt-5 h-100">
+        <h1 class="text-center fs-1 text-dark">JavaScript Mini Porjects Library 🚀 </h1>
+        <div class="container p-4 px-4 bg-secondary mt-4 rounded-4">
+            <p class="fs-3 text-center text-light tex">Explore the JavaScript Mini Projects Library! It's filled with
+                easy, engaging projects perfect for beginners and pros. From interactive websites to cool games, you'll
+                build your JavaScript skills while having fun. Start coding now and enjoy learning!.</p>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="container border-2 rounded-3 bg-info p-5">
+            <div class="row">
+                <div class="col col-md-4">
+                    <div class="container mt-4">
+                        <div class="card">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center fs-4">Dual Dice Roller</h5>
+                                <p
+                                    class="card-text text-center fw-light fw-semibold text-bg-secondary p-2 rounded-2 shadow my-4 ">
+                                    Developed by : Saurabh jaykar</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col col-md-4">
+                    <div class="container mt-4">
+                        <div class="card">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center fs-4">Bulb Magic</h5>
+                                <p
+                                    class="card-text text-center fw-light fw-semibold text-bg-secondary p-2 rounded-2 shadow my-4 ">
+                                    Developed by : Shital Warkhade.</p>
+
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col col-md-4">
+                    <div class="container  mt-4">
+                        <div class="card">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center fs-4">Product Gallery</h5>
+                                <p
+                                    class="card-text text-center fw-light fw-semibold text-bg-secondary p-2 rounded-2 shadow my-4 ">
+                                    Developed by : Pournima Anjole</p>
+
+
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row mt-md-4">
+                <div class="col col-md-4">
+                    <div class="container mt-4">
+                        <div class="card">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center fs-4">BMI Calculator</h5>
+                                <p
+                                    class="card-text text-center fw-light fw-semibold text-bg-secondary p-2 rounded-2 shadow my-4 ">
+                                    Developed by : Bharti Harinkhede</p>
+
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col col-md-4">
+                    <div class="container mt-4">
+                        <div class="card">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center fs-4">Score keeper</h5>
+                                <p
+                                    class="card-text text-center fw-light fw-semibold text-bg-secondary p-2 rounded-2 shadow my-4 ">
+                                    Develope By : Poonam Digole</p>
+
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script
 </body>
 
 </html>
